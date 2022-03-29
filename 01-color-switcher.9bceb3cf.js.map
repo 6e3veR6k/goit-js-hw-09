@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/01-color-switcher.js"],"names":[],"mappings":";;;;;AACA,aADA,QAAA,4DACA,QAAA","file":"01-color-switcher.9bceb3cf.js","sourceRoot":"../src","sourcesContent":["import '../../node_modules/modern-normalize/modern-normalize.css';\nimport '../sass/main.scss';\n"]}
