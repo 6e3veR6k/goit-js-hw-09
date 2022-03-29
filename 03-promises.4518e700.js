@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"clu1":[function(require,module,exports) {
 
-},{}],"Focm":[function(require,module,exports) {
-"use strict";require("../node_modules/modern-normalize/modern-normalize.css"),require("./sass/main.scss");
-},{"../node_modules/modern-normalize/modern-normalize.css":"Y5dV","./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-09/src.a4932d70.js.map
+},{}],"GyVV":[function(require,module,exports) {
+"use strict";function e(e,s){Math.random()}require("../../node_modules/modern-normalize/modern-normalize.css"),require("../sass/main.scss");
+},{"../../node_modules/modern-normalize/modern-normalize.css":"Y5dV","../sass/main.scss":"clu1"}]},{},["GyVV"], null)
+//# sourceMappingURL=/goit-js-hw-09/03-promises.4518e700.js.map

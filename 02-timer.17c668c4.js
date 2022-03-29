@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"d2uN":[function(require,module,exports) {
 "use strict";require("../../node_modules/modern-normalize/modern-normalize.css"),require("../sass/main.scss");
 },{"../../node_modules/modern-normalize/modern-normalize.css":"Y5dV","../sass/main.scss":"clu1"}]},{},["d2uN"], null)
-//# sourceMappingURL=/goit-js-hw-09/02-timer.22637e9e.js.map
+//# sourceMappingURL=/goit-js-hw-09/02-timer.17c668c4.js.map
