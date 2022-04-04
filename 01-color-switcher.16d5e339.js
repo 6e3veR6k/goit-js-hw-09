@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"TCaP":[function(require,module,exports) {
 "use strict";require("../../node_modules/modern-normalize/modern-normalize.css"),require("../sass/main.scss");const t={body:document.body,startButton:document.querySelector("button[data-start]"),stopButton:document.querySelector("button[data-stop]")};r();let o=null;function n(){return`#${Math.floor(16777215*Math.random()).toString(16)}`}function e(e){a(),e.target.hasAttribute("data-start")&&(o=setInterval(()=>{t.body.style.backgroundColor=n()},1e3))}function s(t){a(),clearInterval(o)}function r(){t.stopButton.disabled=!0}function a(){t.stopButton.disabled=!t.stopButton.disabled,t.startButton.disabled=!t.startButton.disabled}t.startButton.addEventListener("click",e),t.stopButton.addEventListener("click",s);
 },{"../../node_modules/modern-normalize/modern-normalize.css":"Y5dV","../sass/main.scss":"clu1"}]},{},["TCaP"], null)
-//# sourceMappingURL=/goit-js-hw-09/01-color-switcher.53f6135c.js.map
+//# sourceMappingURL=/goit-js-hw-09/01-color-switcher.16d5e339.js.map
