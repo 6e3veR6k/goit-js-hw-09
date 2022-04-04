@@ -18,6 +18,7 @@ const refs = {
 };
 
 refs.startButton.addEventListener('click', onStartButtonClick);
+
 const SELECTED_DATE_KEY = 'UserDate';
 const today = new Date();
 let msDiff = 0;
@@ -83,11 +84,7 @@ function onPageLoad() {
 
   if (isDateValid(msDiff)) {
     updateView(msDiff);
-    intervalId = setInterval(() => {
-      const second = 1000;
-      msDiff -= second;
-      updateView(msDiff);
-    }, 1000);
+    startTimer();
 
     options.defaultDate = new Date(selectedDateString);
   }
@@ -105,11 +102,22 @@ function updateView(ms) {
 }
 
 function onStartButtonClick(e) {
-  updateView(msDiff);
   clearInterval(intervalId);
+  updateView(msDiff);
+  startTimer();
+}
+
+function startTimer() {
   intervalId = setInterval(() => {
     const second = 1000;
     msDiff -= second;
+
+    checkTimerValue();
+
     updateView(msDiff);
   }, 1000);
+}
+
+function checkTimerValue() {
+  if (msDiff <= 1000) clearInterval(intervalId);
 }
