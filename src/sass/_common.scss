@@ -163,3 +163,75 @@ label > input {
   font-size: 8rem;
   font-weight: 600;
 }
+
+
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 100vh;
+}
+
+.alarm {
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.circle {
+  background: url(../images/lighten.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 1px 3px rgb(0 0 0 / 0.12)) drop-shadow(0px 1px 2px rgb(0 0 0 / 0.24)) drop-shadow(0px 3px 6px rgb(0 0 0 / 0.16));
+}
+
+.marks {
+  display: flex;
+  width: 510px;
+  height: 510px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.second-arrow,
+.minute-arrow,
+.hour-arrow {
+  display: flex;
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.second-arrow {
+  filter: drop-shadow(0px 10px 20px rgb(0 0 0 / 0.19)) drop-shadow(0px 6px 6px rgb(0 0 0 / 0.23));
+}
+.minute-arrow {
+  filter: drop-shadow(0px 3px 6px rgb(0 0 0 / 0.16)) drop-shadow(0px 3px 6px rgb(0 0 0 / 0.23));
+}
+.hour-arrow {
+  filter: drop-shadow(0px 1px 3px rgb(0 0 0 / 0.12)) drop-shadow(0px 1px 2px rgb(0 0 0 / 0.24));
+}
+
+.numbers {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
